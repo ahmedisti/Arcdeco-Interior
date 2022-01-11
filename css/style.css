@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*===== Variable Define start =====*/
+:root {
+  --primary-color: purple;
+  --secondry-color: #50266c;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+
+  --primary-font: "Roboto", sans-serif;
+  --secondry-font: "Quicksand", sans-serif;
+}
+
+/*===== Variable Define end =====*/
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+  
+}
+
+/*
+=========================================
+    Custom Scrollbar start
+=========================================
+*/
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/*
+=========================================
+    Custom Scrollbar end
+=========================================
+*/
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondry-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color);
+  line-height: 3rem;
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+/*button start*/
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+/*button end*/
+
+/*Header logo start*/
+
+header .logo {
+  width: auto;
+  height: 55px;
+  /* border-radius: 10px; */
+}
+
+/*Header logo end*/
+
+/*top bar start*/
+
+#top-bar {
+  display: block;
+  position: relative;
+  z-index: 999;
+  background: var(--black-color);
+  height: auto;
+  color: var(--white-color);
+  font-size: 10px;
+}
+
+.top-bar-welcome li {
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+  letter-spacing: 1px;
+}
+
+.top-bar-info li {
+  padding: 0px 5px 0px 5px;
+  letter-spacing: 1px;
+
+  list-style: none;
+}
+
+.social-icons li {
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+}
+
+.social-icons a {
+  color: var(--white-color);
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+}
+
+/*top bar end*/
+
+/*
+==========================================
+Header Design start
+==========================================
+*/
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.7s ease-out;
+  background: transparent;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 300ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: goldenrod;
+  letter-spacing: 2px;
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+/* Change navbar styling on scroll */
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2f2d3014;
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+/* .dropdown-menu{
+  
+} */
+
+/*
+==========================================
+Header Design end
+==========================================
+*/
+
+/*
+==========================================
+top-banner Design start
+==========================================
+*/
+.top-banner {
+  width: 100%;
+  background: url("../images/arcdeco-home.jpg") no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+
+/*
+==========================================
+top-banner Design end
+==========================================
+*/
+
+/*
+==========================================
+  counter Design start
+==========================================
+*/
+.counter-section {
+  background-color: var(--black-color);
+  padding: 2.5rem 0;
+}
+
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/*
+==========================================
+  counter Design end
+==========================================
+*/
+
+/* work gallery start */
+
+.hovereffects {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+.hovereffects .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffects img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.hovereffects h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgb(0, 0, 0, 0.6);
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffects a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffects a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffects:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffects:hover .overlay {
+  opacity: 1;
+}
+
+.hovereffects:hover h2,
+.hovereffects:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hovereffects:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+/* work gallery end */
+
+/*
+==========================================
+footer section Design
+==========================================
+*/
+footer {
+  background: #111;
+  padding: 60px 0px 20px 0px;
+  padding-bottom: 10px !important;
+}
+
+
+
+footer h3 {
+  color: goldenrod;
+  letter-spacing: 2px;
+  /* border-bottom: 2px solid var(--secondry-color);
+   border-width: 2px;
+   padding: 0 0 4px; */
+}
+
+footer h3:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: var(--secondry-color);
+  margin-top: 12px;
+}
+
+footer p {
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+
+.footer-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+
+/* ===========about_part_start============= */
+
+/*
+==========================================
+  footer Design start
+==========================================
+*/
+/* 
+.footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+  background: #333;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  background: #DAA520;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icons,
+footer .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icons li
+, footer .menu li{
+  list-style: none;
+}
+
+footer .social_icons li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social_icons li a:hover{
+  transform: translateY(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover{
+  opacity: 1;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave-dupli.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave {
+  0%
+  {
+    background-position-x: 1000px;
+  }
+
+  100%
+  {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0%
+  {
+    background-position-x: 0px;
+  }
+
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+
+*/
+.demo-dummy{
+  height: 100px;
+  width: 100%;
+  background-color: #50266c;
+} 
+
+/*
+==========================================
+  footer Design end
+==========================================
+*/
+
+/*
+==========================================
+  Second slider start
+==========================================
+*/
+.carousel-item {
+  height: 32rem;
+  background: black;
+  color: white;
+  position: relative;
+}
+
+.container .main-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.carousel-caption h2 {
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.carousel-caption p {
+  color: goldenrod;
+  letter-spacing: 2px;
+  font-weight: bold;
+  /* border: 1px solid #fff;
+    background-color: transparent;
+  box-shadow: 0 0 5px #fff; */
+}
+.carousel-caption button {
+  border-radius: 25px;
+}
+
+/* .carousel-caption button:hover{
+
+  color:purple;
+  border-color: goldenrod;
+} */
+
+/*
+==========================================
+  Second slider end
+==========================================
+*/
+
+/*
+==========================================
+  Contact start
+==========================================
+*/
+#contact-us {
+  background-color: red;
+  background: url(images/backgroung-contact.jpg);
+}
+
+.contact-form{
+
+  width: 100%;
+  padding-top: 15%;
+  background: transparent;
+
+}
+
+.contact-form .input-box{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+.contact-form .input-box input,
+textarea{
+
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  background: transparent;
+
+
+}
+
+.contact-form .input-box span{
+  font-weight: bolder;
+}
+
+.contact-btn button{
+  border-radius: 25px;
+}
+
+/*
+==========================================
+  Contact end
+==========================================
+*/
+
+/* working-process start */
+
+.working-process {
+  
+  
+margin-bottom: 15px;
+  
+
+}
+
+.process-icon{
+
+  padding-top: 45px;
+}
+
+.process-descrip li{
+
+  color: black;
+}
+.process-descrip{
+  padding-top: 20px;
+}
+
+
+/* working-process end*/
+
+
