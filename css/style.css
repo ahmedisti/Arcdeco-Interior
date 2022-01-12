@@ -37,6 +37,12 @@ a:hover {
   text-decoration: none;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw !important;
+}
+
 ul,
 ol {
   margin: 0;
@@ -51,7 +57,6 @@ body {
   font-family: var(--primary-font);
   font-size: 100%;
   font-weight: 400;
-  
 }
 
 /*
@@ -438,8 +443,6 @@ footer {
   padding-bottom: 10px !important;
 }
 
-
-
 footer h3 {
   color: goldenrod;
   letter-spacing: 2px;
@@ -462,8 +465,6 @@ footer p {
   letter-spacing: 1px;
 }
 
-
-
 .footer-list {
   margin-top: 20px;
   list-style: none;
@@ -474,8 +475,6 @@ footer p {
   color: white;
   letter-spacing: 2px;
 }
-
-
 
 /* ===========about_part_start============= */
 
@@ -617,11 +616,11 @@ footer .wave#wave4{
 
 
 */
-.demo-dummy{
+.demo-dummy {
   height: 100px;
   width: 100%;
   background-color: #50266c;
-} 
+}
 
 /*
 ==========================================
@@ -699,24 +698,20 @@ footer .wave#wave4{
   background: url(images/backgroung-contact.jpg);
 }
 
-.contact-form{
-
+.contact-form {
   width: 100%;
   padding-top: 15%;
   background: transparent;
-
 }
 
-.contact-form .input-box{
+.contact-form .input-box {
   position: relative;
   width: 100%;
   margin-top: 10px;
-  
 }
 
 .contact-form .input-box input,
-textarea{
-
+textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -725,15 +720,13 @@ textarea{
   border-bottom: 2px solid #333;
   outline: none;
   background: transparent;
-
-
 }
 
-.contact-form .input-box span{
+.contact-form .input-box span {
   font-weight: bolder;
 }
 
-.contact-btn button{
+.contact-btn button {
   border-radius: 25px;
 }
 
@@ -746,27 +739,73 @@ textarea{
 /* working-process start */
 
 .working-process {
-  
-  
-margin-bottom: 15px;
-  
-
+  margin-bottom: 15px;
 }
 
-.process-icon{
-
+.process-icon {
   padding-top: 45px;
 }
 
-.process-descrip li{
-
+.process-descrip li {
   color: black;
 }
-.process-descrip{
+.process-descrip {
   padding-top: 20px;
 }
 
-
 /* working-process end*/
 
+/* faq section start */
 
+.accordion,
+.accordion-item {
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.accordion {
+  box-shadow: 0 2px 20px 0 rgb(110, 130, 280, 0.18);
+}
+
+.accordion-button {
+  width: 100%;
+  height: 75px;
+  color: goldenrod;
+  font-weight: bold;
+  text-align: left;
+  text-decoration: none;
+}
+.accordion-button:not(.collapsed) {
+  color: purple;
+}
+
+.accordion-body {
+  background: purple;
+  color: white;
+}
+
+.accordion-body ul {
+  list-style: none;
+  padding-left: 3px;
+}
+.accordion ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: goldenrod; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.faq-image {
+  padding-bottom: 20px;
+}
+
+.faq-image img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* faq section end */
