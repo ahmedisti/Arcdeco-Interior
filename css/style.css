@@ -287,7 +287,7 @@ Header Design start
   left: 0;
   width: 100%;
   background: #2f2d3014;
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.5);
   transition: all 0.15s ease-in-out 0s;
 }
 
@@ -361,14 +361,12 @@ top-banner Design end
   left: 0;
   opacity: 0;
   background-color: rgb(0, 0, 0, 0.5);
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .hovereffects img {
   display: block;
   position: relative;
-  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
@@ -379,10 +377,7 @@ top-banner Design end
   position: relative;
   font-size: 17px;
   background: rgb(0, 0, 0, 0.6);
-  -webkit-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
   transform: translateY(-100px);
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   padding: 10px;
 }
@@ -396,7 +391,6 @@ top-banner Design end
   background-color: transparent;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin: 50px 0 0;
   padding: 7px 14px;
@@ -407,8 +401,7 @@ top-banner Design end
 }
 
 .hovereffects:hover img {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
+
   transform: scale(1.2);
 }
 
@@ -420,8 +413,7 @@ top-banner Design end
 .hovereffects:hover a.info {
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
+
   transform: translateY(0);
 }
 
@@ -668,6 +660,7 @@ footer .wave#wave4{
   color: goldenrod;
   letter-spacing: 2px;
   font-weight: bold;
+  font-family: var(--secondry-font);
   /* border: 1px solid #fff;
     background-color: transparent;
   box-shadow: 0 0 5px #fff; */
@@ -696,6 +689,11 @@ footer .wave#wave4{
 #contact-us {
   background-color: red;
   background: url(images/backgroung-contact.jpg);
+  font-family: var(--secondry-font);
+}
+
+.contactInfo p{
+  font-weight: bold;
 }
 
 .contact-form {
@@ -746,9 +744,21 @@ textarea {
   padding-top: 45px;
 }
 
-.process-descrip li {
-  color: black;
+.process-descrip h3{
+  color: black !important;
+  letter-spacing: 1px;
+  font-family: var(--secondry-font);
 }
+
+.process-descrip li {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: var(--primary-font);
+}
+
+
 .process-descrip {
   padding-top: 20px;
 }
@@ -783,11 +793,13 @@ textarea {
 .accordion-body {
   background: purple;
   color: white;
+  font-family: var(--secondry-font);
 }
 
 .accordion-body ul {
   list-style: none;
   padding-left: 3px;
+  font-family: var(--secondry-font);
 }
 .accordion ul li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
