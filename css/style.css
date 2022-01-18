@@ -286,7 +286,7 @@ Header Design start
   top: 0;
   left: 0;
   width: 100%;
-  background: #2f2d3014;
+  background: #fff;
   box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.5);
   transition: all 0.15s ease-in-out 0s;
 }
