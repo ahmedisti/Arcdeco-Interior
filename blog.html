@@ -141,7 +141,7 @@
       }
       .blog-img {
         position: relative;
-        width: 60%;
+        width: 80%;
       }
       .blog-img span {
         position: absolute;
@@ -180,12 +180,15 @@
         color: var(--dark);
         display: inline-block;
         background: var(--dark);
-        color: #fff;
+        color: purple;
         padding: 0.55rem 1.2rem;
         transition: all 0.5s ease;
+        border: goldenrod 1px solid;
+        border-radius: 25px;
       }
       .blog-text a:hover {
-        background: var(--exDark);
+        background: goldenrod;
+        border-radius: 25px;
       }
 
       /* about */
@@ -195,11 +198,21 @@
       .about-text {
         margin: 2rem 0;
       }
+      .about-text .title h2:hover{
+        color: goldenrod;
+        letter-spacing: 3px;
+      }
       .about-text > p {
         font-size: 1.1rem;
         padding: 0.6rem 0;
         opacity: 0.8;
       }
+
+      .about-text .title p:hover{
+        color: purple !important; 
+        letter-spacing: 2px;
+      }
+
     </style>
   </head>
 
